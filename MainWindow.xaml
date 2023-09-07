@@ -1,0 +1,85 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="KALKULATOR" Height="500" Width="800" FontFamily="Bahnschrift SemiBold" FontSize="36" ResizeMode="NoResize" Icon="/image1.png">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF508E6A"/>
+                <GradientStop Color="#FF5CCE8D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="bt1" Content="1" HorizontalAlignment="Left" Height="45" Margin="25,189,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click" >
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button Style="{DynamicResource ButtonStyle1}" x:Name="bt1_Copy1" Content="2" HorizontalAlignment="Left" Height="90" Margin="120,144,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt3" Content="3" HorizontalAlignment="Left" Height="90" Margin="215,144,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt4" Content="4" HorizontalAlignment="Left" Height="90" Margin="25,239,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt5" Content="5" HorizontalAlignment="Left" Height="90" Margin="120,239,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt6" Content="6" HorizontalAlignment="Left" Height="90" Margin="215,239,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt7" Content="7" HorizontalAlignment="Left" Height="90" Margin="25,334,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt8" Content="8" HorizontalAlignment="Left" Height="90" Margin="120,334,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt9" Content="9" HorizontalAlignment="Left" Height="90" Margin="215,334,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bt0" Content="0" HorizontalAlignment="Left" Height="45" Margin="25,144,0,0" VerticalAlignment="Top" Width="90" Click="bt0_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF91E9EC" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="tb_input" HorizontalAlignment="Center" Height="101" Margin="0,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="750" FontSize="24" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF98EAE0" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btDIV" Content="/" HorizontalAlignment="Left" Height="90" Margin="339,239,0,0" VerticalAlignment="Top" Width="100" Click="btDIV_Click" Background="#FFB1EC91"/>
+        <Button x:Name="btMUL" Content="*" HorizontalAlignment="Left" Height="90" Margin="339,334,0,0" VerticalAlignment="Top" Width="100" Click="btMUL_Click" Background="#FFB1EC91"/>
+        <Button x:Name="btPL" Content="+" HorizontalAlignment="Left" Height="90" Margin="454,239,0,0" VerticalAlignment="Top" Width="100" Click="btPL_Click" Background="#FFB1EC91"/>
+        <Button x:Name="btMIN" Content="-" HorizontalAlignment="Left" Height="90" Margin="454,334,0,0" VerticalAlignment="Top" Width="100" Click="btMIN_Click" Background="#FFB1EC91"/>
+        <Button x:Name="tbRAW" Content="=" HorizontalAlignment="Left" Height="90" Margin="579,334,0,0" VerticalAlignment="Top" Width="196" Click="tbRAW_Click" Background="#FF2DA2ED"/>
+        <TextBox x:Name="tb_result" HorizontalAlignment="Left" Height="90" Margin="339,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="436" IsReadOnly="True">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF98EAE0" Opacity="0.8"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btCLR" Content="CLEAR" HorizontalAlignment="Left" Height="90" Margin="579,239,0,0" VerticalAlignment="Top" Width="98" FontSize="24" Click="btCLR_Click" Background="#FFD4B032"/>
+        <Button x:Name="btC" Content="C" HorizontalAlignment="Left" Height="90" Margin="677,239,0,0" VerticalAlignment="Top" Width="98" FontSize="24" Click="btC_Click" Background="#FFD4B032"/>
+
+    </Grid>
+</Window>
